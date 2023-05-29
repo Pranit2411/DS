@@ -1,0 +1,10 @@
+1. Open terminal in the path and type the following command
+		javac *.java
+		rmic AdderRemote
+		rmiregistry 5000
+
+2. Open another terminal and navigate to same path 
+		java MyServer
+
+3. Open another terminal and navigate to same path 
+		java MyClient
