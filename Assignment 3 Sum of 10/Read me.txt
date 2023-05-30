@@ -1,0 +1,24 @@
+1. Go to terminal 
+
+2. Update using 
+		sudo apt -get update
+		sudo apt install gcc
+
+3. Go to the directory which contains the downloaded tar file
+		cd /home/sada/asd
+		cd ..
+
+4. Extract the files using 
+		tar -jxf openmpi-4.1.4.tar.bz2
+
+5. configure and compile 
+		./configure --prefix = $Home/opt/openmpi
+		make all
+		make install
+
+6. updte the path 
+		echo "export.PATH=\$PATH:\$HOME/opt/openmpi/bin">> $HOME/.bashrc echo"export CD_LIBRARY_PATH-\$CD_LIBRARY_PATH:\$HOME/opt/openmpi/lib>$HOME/.bashrc
+
+7. mpicc name of program
+
+8. mpirun or mpicrun  -Ap N ./a.out
